@@ -1,0 +1,28 @@
+{
+  "title": "Shlink",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Shlink",
+        "description": "Connect Home Assistant to your Shlink instance.",
+        "data": {
+          "url": "Shlink URL",
+          "api_key": "API key",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "url": "Base URL of your Shlink instance, for example https://s.example.com",
+          "api_key": "Shlink API key with permission to read short URLs",
+          "verify_ssl": "Disable this when using a self-signed certificate internally."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to Shlink.",
+      "invalid_auth": "The API key is invalid or does not have sufficient permissions."
+    },
+    "abort": {
+      "already_configured": "This Shlink instance is already configured."
+    }
+  }
+}

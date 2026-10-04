@@ -1,0 +1,28 @@
+{
+  "title": "Shlink",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Shlink verbinden",
+        "description": "Verbinde Home Assistant mit deiner Shlink-Instanz.",
+        "data": {
+          "url": "Shlink URL",
+          "api_key": "API-Key",
+          "verify_ssl": "SSL-Zertifikat prüfen"
+        },
+        "data_description": {
+          "url": "Basis-URL deiner Shlink-Instanz, z. B. https://s.example.ch",
+          "api_key": "Shlink API-Key mit Leserechten für Kurzlinks",
+          "verify_ssl": "Deaktivieren, wenn du intern ein selbstsigniertes Zertifikat verwendest."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zu Shlink fehlgeschlagen.",
+      "invalid_auth": "API-Key ungültig oder nicht ausreichend berechtigt."
+    },
+    "abort": {
+      "already_configured": "Diese Shlink-Instanz ist bereits eingerichtet."
+    }
+  }
+}
